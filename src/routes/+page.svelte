@@ -4,7 +4,7 @@
   <div>
 
     <h1 class="name"> Yasir Muktar 2 </h1>
-    <h2 class="item">Här har jag samlat min uppgifter jag gjort i samband med webbutveckling i årskurs 2 på Maja Beskowgymnasiet!</h2>
+    <h2 class="item">Välkommen till min vackra hemsida </h2>
     <h3 id="number">life is roblox:</h3>
     <p id="inspo">
       "The only way to learn a new programming language is by writing programs in it." - <strong>Dennis Ritchie</strong>, creator of the C programming language.
@@ -38,8 +38,8 @@
   }
     
 h1{
-    color:grey;
-    background-color: lightblue;
+    color:rgb(237, 41, 41);
+    background-color: rgb(31, 152, 196);
 }
 h2{
     color: rgb(255, 165, 0);
