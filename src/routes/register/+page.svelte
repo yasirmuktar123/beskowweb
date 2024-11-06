@@ -5,7 +5,7 @@
     let color = "black";
     let colors = [
         { namn: "Blå", value: "blue" },
-        { namn: "Röd", value: "red" },
+        { namn: "Röd", value: "white" },
         { namn: "Grön", value: "green" },
         { namn: "Gul", value: "yellow" },
         { namn: "Svart", value: "black" }
