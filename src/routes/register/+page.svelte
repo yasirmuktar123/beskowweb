@@ -8,7 +8,7 @@
         { namn: "Röd", value: "white" },
         { namn: "Grön", value: "green" },
         { namn: "Gul", value: "yellow" },
-        { namn: "Svart", value: "black" }
+        { namn: "Svart", value: "pink" }
     ];
 
     function handleSubmit() {
