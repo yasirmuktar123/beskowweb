@@ -1,3 +1,8 @@
+<a href="{base}/">Home</a>
+<a href="{base}/photoapp">Photoapp</a>
+<a href="{base}/register">Register</a>
+<a href="{base}/about">About</a>
+
 <script>
 	import '../app.postcss';
 	import { base } from '$app/paths';
