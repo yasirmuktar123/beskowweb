@@ -3,7 +3,7 @@
 <main>
   <div>
 
-    <h1 class="name"> Yasir Muktar 2 </h1>
+    <h1 class="name"> Yasir Muktar 7 </h1>
     <h2 class="item">Välkommen till min vackra hemsidaaa </h2>
     <h3 id="number">life is roblox:</h3>
     <p id="inspo">
