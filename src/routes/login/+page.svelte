@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { users_store } from "$lib/user";
+    import {base} from "$app/paths"
 
     let users = [];
     let email = "";
@@ -41,7 +42,7 @@
 
                 <input type="submit" value="Logga in" style="margin-top: 10px;">
             </form>
-            <p style="color: white;">Har du inte ett konto? <a href="/register" style="color: lightblue;">Registrera dig</a>.</p>
+            <p style="color: white;">Har du inte ett konto? <a href="{base}/register" style="color: lightblue;">Registrera dig</a>.</p>
         </div>
     </main>
 
