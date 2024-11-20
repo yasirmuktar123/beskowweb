@@ -2,6 +2,7 @@
 <a href="{base}/photoapp">Photoapp</a>
 <a href="{base}/register">Register</a>
 <a href="{base}/about">About</a>
+<a href="{base}/login">About</a>
 
 <script>
 	import '../app.postcss';
