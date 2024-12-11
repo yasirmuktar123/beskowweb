@@ -3,7 +3,8 @@
 <a href="{base}/register">Register</a>
 <a href="{base}/login">Login</a>
 <a href="{base}/about">About</a>
-
+<a href="{base}/shoppinglist">shoppinglist</a>
+<a href="{base}/memory">memory</a>
 <script>
 	import '../app.postcss';
 	import { base } from '$app/paths';
