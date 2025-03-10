@@ -105,7 +105,7 @@
 
 .categories_container{
     height: 100%;
-    background-color: rebeccapurple;
+    background-color: rgb(102, 49, 154);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);

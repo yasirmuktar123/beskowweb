@@ -5,6 +5,9 @@
 <a href="{base}/about">About</a>
 <a href="{base}/shoppinglist">shoppinglist</a>
 <a href="{base}/memory">memory</a>
+<a href="{base}/chat">chat</a>
+<a href="{base}/search">search</a>
+
 <script>
 	import '../app.postcss';
 	import { base } from '$app/paths';
