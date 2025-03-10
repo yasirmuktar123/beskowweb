@@ -41,9 +41,41 @@
         }
     }
     
+  
+  let email = "test@mail.com".split("");
+  let password = "password123".split("");
+  let words = ["random", "words", "appear", "here", ...email, "mixed", "up", "password", ...password, "end"];
+  let shuffledWords = [];
+  let capturedEmail = "";
+  let capturedPassword = "";
+  let collectingEmail = true;
+
+  function shuffleArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
+
+  function handleClick(word) {
+    let target = collectingEmail ? email : password;
+    if (word === target[(collectingEmail ? capturedEmail : capturedPassword).length]) {
+      if (collectingEmail) {
+        capturedEmail += word;
+        if (capturedEmail.length === email.length) collectingEmail = false;
+      } else {
+        capturedPassword += word;
+      }
+    } else {
+      capturedEmail = "";
+      capturedPassword = "";
+      collectingEmail = true;
+    }
+  }
+
+ 
 
     // När sidan laddats in, skapa bokstäverna och starta intervallet
     onMount(()=>{
+          shuffledWords = shuffleArray(words);
+
         randomizeLetters()
         console.log(letters)
         //Update all positions every 3s
@@ -115,43 +147,6 @@
     }
 </style>
 
-
-
-<script>
-    import { onMount } from "svelte";
-  
-    let email = "test@mail.com".split("");
-    let password = "password123".split("");
-    let words = ["random", "words", "appear", "here", ...email, "mixed", "up", "password", ...password, "end"];
-    let shuffledWords = [];
-    let capturedEmail = "";
-    let capturedPassword = "";
-    let collectingEmail = true;
-  
-    function shuffleArray(array) {
-      return array.sort(() => Math.random() - 0.5);
-    }
-  
-    function handleClick(word) {
-      let target = collectingEmail ? email : password;
-      if (word === target[(collectingEmail ? capturedEmail : capturedPassword).length]) {
-        if (collectingEmail) {
-          capturedEmail += word;
-          if (capturedEmail.length === email.length) collectingEmail = false;
-        } else {
-          capturedPassword += word;
-        }
-      } else {
-        capturedEmail = "";
-        capturedPassword = "";
-        collectingEmail = true;
-      }
-    }
-  
-    onMount(() => {
-      shuffledWords = shuffleArray(words);
-    });
-  </script>
   
   <div class="flex flex-col items-center text-center p-4">
     <h2 class="text-xl font-bold">Click the correct letters to enter your email and password</h2>
